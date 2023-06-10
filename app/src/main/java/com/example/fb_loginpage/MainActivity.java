@@ -21,8 +21,10 @@ public class MainActivity extends AppCompatActivity {
 
         arrayList = new ArrayList<>();
         String[] languageList = {"English (US)", "Spanish", "French", "German", "Italian", "Portuguese", "Chinese (Simplified)", "Chinese (Traditional)",
-                "Japanese", "Korean", "Russian", "Arabic", "Turkish", "Indonesian", "Thai", "Vietnamese", "Dutch", "Swedish", "Danish", "Norwegian", "Finnish", "Polish", "Romanian",
-                "Hungarian", "Czech", "Slovak", "Greek", "Bulgarian", "Ukrainian", "Hebrew", "Hindi", "Bengali", "Tamil", "Telugu", "Marathi", "Gujarati", "Kannada", "Malayalam", "Punjabi", "Urdu", "Persian", "Swahili", "Amharic", "Filipino", "Malay", "Burmese", "Khmer", "Lao", "Sinhala", "Nepali", "Georgian", "Azerbaijani", "Kurdish", "Kazakh", "Mongolian", "Pashto", "Sindhi", "Tajik", "Uzbek", "Yoruba", "Zulu"};
+                "Japanese", "Korean", "Russian", "Arabic", "Turkish", "Indonesian", "Thai", "Vietnamese", "Dutch", "Swedish", "Danish", "Norwegian", "Finnish",
+                "Polish", "Romanian", "Hungarian", "Czech", "Slovak", "Greek", "Bulgarian", "Ukrainian", "Hebrew", "Hindi", "Bengali", "Tamil", "Telugu", "Marathi",
+                "Gujarati", "Kannada", "Malayalam", "Punjabi", "Urdu", "Persian", "Swahili", "Amharic", "Filipino", "Malay", "Burmese", "Khmer", "Lao", "Sinhala", "Nepali",
+                "Georgian", "Azerbaijani", "Kurdish", "Kazakh", "Mongolian", "Pashto", "Sindhi", "Tajik", "Uzbek", "Yoruba", "Zulu"};
 
         for (String itemArray : languageList) {
             arrayList.add(itemArray);
