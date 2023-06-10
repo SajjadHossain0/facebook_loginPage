@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-
         languageOptn = findViewById(R.id.languageOptn);
 
         languageOptn.setOnClickListener(new View.OnClickListener() {

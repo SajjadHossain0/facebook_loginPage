@@ -153,8 +153,6 @@
                     android:shadowColor="@color/black"
                     android:textSize="20dp" />
             </LinearLayout>
-
         </LinearLayout>
-
     </LinearLayout>
 </RelativeLayout>
