@@ -99,6 +99,7 @@
                 app:cornerRadius="35dp" />
 
             <TextView
+                android:id="@+id/forgotPass"
                 style="@style/MaterialAlertDialog.Material3.Title.Icon.CenterStacked"
                 android:layout_width="350dp"
                 android:layout_height="50dp"

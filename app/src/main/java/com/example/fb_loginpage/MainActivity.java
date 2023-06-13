@@ -1,17 +1,22 @@
 package com.example.fb_loginpage;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.PopupMenu;
 import android.widget.TextView;
 
+import com.google.android.material.button.MaterialButton;
+
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    private TextView languageOptn;
+    private TextView languageOptn,forgotPass;
+    private MaterialButton loginBtn;
     private ArrayList<String> arrayList;
 
     @Override
@@ -32,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
         languageOptn = findViewById(R.id.languageOptn);
+        forgotPass = findViewById(R.id.forgotPass);
+        loginBtn = findViewById(R.id.loginBtn);
 
         languageOptn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,5 +59,26 @@ public class MainActivity extends AppCompatActivity {
                 popupMenu.show();
             }
         });
+        forgotPass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openDialog();
+
+    }
+        });
+
+    }
+
+    public void openDialog() {
+        new AlertDialog.Builder(this)
+                .setTitle("Forgot Password?")
+                .setMessage("Sit back, relax and try to remember your password.")
+                .setCancelable(false)
+                .setPositiveButton("Thanks", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                    }
+                }).show();
     }
 }
